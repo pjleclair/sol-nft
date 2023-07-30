@@ -1,2 +1,2 @@
-# sol-app-template
-Template for scaffolding Solana dapps
+## Next.js template for scaffolding Solana dapps
+'npm run start' to run the app
