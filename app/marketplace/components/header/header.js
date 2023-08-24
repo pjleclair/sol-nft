@@ -42,8 +42,6 @@ const Header = ({displayMode, setDisplayMode}) => {
                 <Image onClick={handleClick} src={displayIcon} alt="display"/>
                 <Image src={Notifications} alt="notifs"/>
                 <Image src={Avatar} alt="user"/>
-            </div>
-            <div>
                 <WalletMultiButton />
                 <WalletDisconnectButton />
             </div>
