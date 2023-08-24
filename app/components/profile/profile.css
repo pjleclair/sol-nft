@@ -16,6 +16,16 @@ main.profile--container-lm {
     overflow-y: auto;
 }
 
+main.profile--container,main.profile--container-lm {
+    /* disable scrollbar visual */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+main.profile--container::-webkit-scrollbar,main.profile--container-lm::-webkit-scrollbar {
+    display: none;
+}
+
 main.profile--container img, main.profile--container-lm img {
     width: 2.75rem;
 }

@@ -6,4 +6,12 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     overflow-y: auto;
+    /* disable scrollbar visual */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* disable webkit scrollbar: */
+.trending::-webkit-scrollbar {
+    display: none;
 }
