@@ -12,7 +12,7 @@ import Settings from "../components/settings/settings"
 
 import React, { ReactElement } from 'react';
 
-const Home = (): ReactElement => {
+const Marketplace = (): ReactElement => {
 
     const [selectedComponent, setSelectedComponent] = React.useState('Dashboard')
     const [displayMode, setDisplayMode] = React.useState('dark')
@@ -56,4 +56,4 @@ const Home = (): ReactElement => {
     )
 }
 
-export default Home;
+export default Marketplace;
