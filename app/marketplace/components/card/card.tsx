@@ -3,7 +3,7 @@ import NFT from "./images/NFT.svg"
 
 import Image from "next/image"
 
-const Card = ({title, displayMode}: {title:string,displayMode:string}) => {
+const Card = ({title, displayMode}: {title?: string, displayMode:string}) => {
 
     let cardContainerClass
 

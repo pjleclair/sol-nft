@@ -1,5 +1,5 @@
 import "./dashboard.css"
-import Trending from "../trending/trending.js"
+import Trending from "../trending/trending"
 import Featured from "./images/Featured.svg"
 import Avatar from "./images/Avatar.svg"
 

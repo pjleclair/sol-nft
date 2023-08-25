@@ -1,9 +1,9 @@
-import Card from "../card/card.tsx"
+import Card from "../card/card"
 import React from "react"
 import "./trending.css"
 
 
-const Trending = ({displayMode}) => {
+const Trending = ({displayMode}: {displayMode: string}) => {
 
     // const trendingCards = 
     //     nfts.map((obj) => {
