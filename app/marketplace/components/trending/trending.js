@@ -1,4 +1,4 @@
-import Card from "../card/card.js"
+import Card from "../card/card.tsx"
 import React from "react"
 import "./trending.css"
 
