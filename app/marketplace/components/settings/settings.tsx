@@ -3,7 +3,7 @@ import pfp from "../header/images/Avatar.svg"
 
 import Image from "next/image"
 
-const Settings = ({displayMode}) => {
+const Settings = ({displayMode}: {displayMode: string}) => {
 
     let settingsContainer, userInfoClass, updateProfileClass, personalInfoClass
 
