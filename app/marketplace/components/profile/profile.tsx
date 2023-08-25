@@ -7,7 +7,7 @@ import NFT from "../card/images/NFT.svg"
 
 import Image from "next/image"
 
-const Profile = ({displayMode}) => {
+const Profile = ({displayMode}: {displayMode: string}) => {
     const unverif = "Looks like you are not verified yet. Verify yourself to use the full potential of NFT Marketplace."
 
     const Following = () => {
@@ -45,7 +45,7 @@ const Profile = ({displayMode}) => {
         )
     }
 
-    let profileContainerClass, verifContainerClass, followingContainerClass, purchasedId, collectionId
+    let profileContainerClass: string, verifContainerClass: string, followingContainerClass: string, purchasedId: string, collectionId: string
 
     if (displayMode === 'dark') {
         profileContainerClass = "profile--container"
