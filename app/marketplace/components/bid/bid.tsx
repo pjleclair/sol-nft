@@ -4,7 +4,7 @@ import Avatar from "./images/Avatar.svg"
 
 import Image from "next/image"
 
-const Bid = ({displayMode}) => {
+const Bid = ({displayMode}: {displayMode: string}) => {
 
     const Panel = () => {
         return(
@@ -30,7 +30,7 @@ const Bid = ({displayMode}) => {
     }
 
     let bidClass
-    let panelClass
+    let panelClass: string
 
     if (displayMode === 'dark') {
         bidClass = "bids--container"

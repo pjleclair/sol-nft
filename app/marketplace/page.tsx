@@ -10,9 +10,10 @@ import Profile from "./components/profile/profile"
 import Settings from "./components/settings/settings"
 
 
-import React, { ReactElement } from 'react';
+import React from 'react';
+import { NextPage } from "next"
 
-const Marketplace = (): ReactElement => {
+const Marketplace: NextPage = () => {
 
     const [selectedComponent, setSelectedComponent] = React.useState('Dashboard')
     const [displayMode, setDisplayMode] = React.useState('dark')
