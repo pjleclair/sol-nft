@@ -1,7 +1,7 @@
 import "./collection.css"
 import Trending from "../trending/trending"
 
-const Collection = ({displayMode}) => {
+const Collection = ({displayMode}: {displayMode: string}) => {
 
     let collectionContainerClass
 
