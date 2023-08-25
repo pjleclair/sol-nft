@@ -12,7 +12,7 @@ import {
 
 import Image from "next/image"
 
-const Header = ({displayMode, setDisplayMode}) => {
+const Header = ({displayMode, setDisplayMode}: {displayMode: string, setDisplayMode: Function}) => {
 
     let displayIcon
     let searchId
