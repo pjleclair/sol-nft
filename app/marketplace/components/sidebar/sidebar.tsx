@@ -13,9 +13,9 @@ import selectedProfile from "./images/selectedProfile.svg"
 
 import Image from "next/image"
 
-const Sidebar = ({selectedComponent, changeComponent, displayMode}) => {
+const Sidebar = ({selectedComponent, changeComponent, displayMode}: {selectedComponent: string, changeComponent: Function, displayMode: string}) => {
     
-    const handleClick = (component) => {
+    const handleClick = (component: string) => {
         console.log(component)
         changeComponent(component)
     }
