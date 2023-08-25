@@ -5,7 +5,7 @@ import Avatar from "./images/Avatar.svg"
 
 import Image from "next/image"
 
-const Dashboard = ({displayMode}) => {
+const Dashboard = ({displayMode}: {displayMode: string}) => {
 
     let featuredClass
     let contContainerClass
