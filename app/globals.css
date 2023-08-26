@@ -49,3 +49,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+main button {
+  width: 6.125rem;
+}
