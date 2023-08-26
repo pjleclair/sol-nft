@@ -24,7 +24,7 @@
     align-items: center;
 }
 
-.sb--container img {
+.sb--container img, .sb--container-lm img {
     cursor: pointer;
 }
 
