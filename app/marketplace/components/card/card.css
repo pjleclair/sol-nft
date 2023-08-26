@@ -36,6 +36,10 @@ button {
     color: #FFFFFF;
 }
 
+#bid--button {
+    width: 90%;
+}
+
 #title {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;

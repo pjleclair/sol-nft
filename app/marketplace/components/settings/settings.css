@@ -34,16 +34,12 @@
 .update-profile, .user-info {
     background: #1D1932;
     border-radius: 12px;
-    width: 33.375rem;
-    height: 12.813rem;
     padding: 1.25rem;
 }
 
 .update-profile-lm, .user-info-lm {
     background: #FFFFFF;
     border-radius: 12px;
-    width: 33.375rem;
-    height: 12.813rem;
     padding: 1.25rem;
 }
 
@@ -55,6 +51,8 @@
 }
 
 .update-profile-lm input, .user-info-lm input {
+    border-color: #131129;
+    border-width: 1px;
     border-radius: 8px;
     width: 33.25rem;
     height: 2.5rem;
@@ -123,6 +121,8 @@
     width: 35rem;
     height: 2.5rem;
     border-radius: 8px;
+    border-color: #131129;
+    border-width: 1px;
 }
 
 .personal--info button, .personal--info-lm button {

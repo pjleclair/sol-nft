@@ -73,7 +73,7 @@ main.profile--container h1, main.profile--container-lm h1 {
     width: 21.25rem;
 }
 
-.verif--container h1 {
+.verif--container h1, .verif--container-lm h1 {
     margin: .625rem 0 .625rem 0;
 }
 
@@ -87,7 +87,6 @@ main.profile--container h1, main.profile--container-lm h1 {
 #divider {
     margin: 1rem 0 1rem 0;
     border: 0.2px solid #D6DBDE;
-    width: 21rem;
 }
 
 .verif--desc {
