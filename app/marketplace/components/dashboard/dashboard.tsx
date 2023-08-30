@@ -52,12 +52,12 @@ const Dashboard = ({displayMode, data}: {displayMode: string, data: nftData}) =>
                             <div id="current-bid">
                                 <div>Current Bid</div>
                                 <div>:</div>
-                                <div id="bid">0.05 ETH</div>
+                                <div id="bid">1.50 SOL</div>
                             </div>
                         </div>
                         <div className="vals">
                             <div>3h 1m 50s</div>
-                            <div>0.15 ETH</div>
+                            <div>20 SOL</div>
                         </div>
                         <div className="button--container">
                             <button id="place-bid">Place a Bid</button>

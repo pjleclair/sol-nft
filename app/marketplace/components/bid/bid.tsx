@@ -17,11 +17,11 @@ const Bid = ({displayMode}: {displayMode: string}) => {
                         <div>John Abraham</div>
                     </div>
                 </div>
-                <div>0.0025 ETH</div>
-                <div>0.0025 ETH</div>
+                <div>20.50 SOL</div>
+                <div>20.50 SOL</div>
                 <div className="offer-container">
                     <Image src={Avatar} alt="user"/>
-                    <div>0.0025 ETH</div>
+                    <div>20.50 SOL</div>
                 </div>
                 <div>2 Hours 1 Min 30s</div>
                 <div id="X">X</div>
