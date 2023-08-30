@@ -1,9 +1,12 @@
 import { NextResponse } from "next/server";
 
 const getNftData = async () => {
-    //fill this in once API provider is determined
+    //get sol nft collections from Tensor
+    const nfts = await fetch('https://api-mainnet.magiceden.dev/v2/collections');
+    return nfts.json();
 }
 
 export async function GET(request: Request) {
-    return NextResponse.json({"msg":"test"})
+    const data = await getNftData()
+    return NextResponse.json({data})
 }
