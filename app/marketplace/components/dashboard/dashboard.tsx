@@ -5,7 +5,9 @@ import Avatar from "./images/Avatar.svg"
 
 import Image from "next/image"
 
-const Dashboard = ({displayMode}: {displayMode: string}) => {
+type nftData = any[] | null
+
+const Dashboard = ({displayMode, data}: {displayMode: string, data: nftData}) => {
 
     let featuredClass
     let contContainerClass
@@ -72,7 +74,10 @@ const Dashboard = ({displayMode}: {displayMode: string}) => {
                     <div className="selector--item">Music</div>
                 </div>
             </div>
-            <Trending displayMode={displayMode}/>
+            <Trending
+                displayMode={displayMode}
+                data={data}
+            />
         </main>
     )
 }

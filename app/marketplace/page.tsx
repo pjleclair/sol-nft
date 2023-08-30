@@ -10,13 +10,29 @@ import Profile from "./components/profile/profile"
 import Settings from "./components/settings/settings"
 
 
-import React from 'react';
+import { useState, useEffect } from 'react';
 import { NextPage } from "next"
+
+type nftData = any[] | null
 
 const Marketplace: NextPage = () => {
 
-    const [selectedComponent, setSelectedComponent] = React.useState('Dashboard')
-    const [displayMode, setDisplayMode] = React.useState('dark')
+    const [selectedComponent, setSelectedComponent] = useState('Dashboard')
+    const [displayMode, setDisplayMode] = useState('dark')
+    const [data, setData] = useState<nftData>(null)
+
+    useEffect(() => {
+
+        //fetch nft data from API route
+        const fetchNfts = async () => {
+            const res = await fetch('/api/nftData')
+            const data = await res.json()
+            setData(data.data)
+        }
+
+        fetchNfts()
+        .catch(console.error)
+    },[])
 
     let containerClass
     if (displayMode === 'dark') {
@@ -39,6 +55,7 @@ const Marketplace: NextPage = () => {
                 />
                 {selectedComponent === 'Dashboard' && <Dashboard 
                     displayMode={displayMode}
+                    data={data}
                 />}
                 {selectedComponent === 'Bid' && <Bid 
                     displayMode={displayMode}

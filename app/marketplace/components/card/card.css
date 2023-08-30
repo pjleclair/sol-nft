@@ -42,10 +42,12 @@ button {
 #title {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
-
+    white-space:nowrap;
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .info--container {

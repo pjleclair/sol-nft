@@ -1,31 +1,38 @@
 import Card from "../card/card"
-import React from "react"
+import React, { ReactElement } from "react"
 import "./trending.css"
 
+type nftData = any[] | null
 
-const Trending = ({displayMode}: {displayMode: string}) => {
+const Trending = ({displayMode, data}: {displayMode: string, data?: nftData}) => {
+    
+    let trendingCards: ReactElement | any[] = <>
+            <Card displayMode={displayMode} />
+            <Card displayMode={displayMode} />
+            <Card displayMode={displayMode} />
+            <Card displayMode={displayMode} />
+            <Card displayMode={displayMode} />
+            <Card displayMode={displayMode} />
+            <Card displayMode={displayMode} />
+            <Card displayMode={displayMode} />
+        </>
 
-    // const trendingCards = 
-    //     nfts.map((obj) => {
-    //         return <Card
-    //                 key={obj.id}
-    //                 title={obj.name}
-    //                 image={obj.image.small}
-    //                 floor_price={obj.floor_price.native_currency}
-    //             />
-    // })
+    if (data) {
+        trendingCards = 
+            data.map((obj) => {
+                return <Card
+                        displayMode={displayMode}
+                        key={obj.id}
+                        title={obj.name}
+                        image={obj.image}
+                        floor_price={obj.floorPrice}
+                    />
+        })
+    }
 
     return(
         <div className="trending">
-                {/* {trendingCards} */}
-                <Card displayMode={displayMode} />
-                <Card displayMode={displayMode} />
-                <Card displayMode={displayMode} />
-                <Card displayMode={displayMode} />
-                <Card displayMode={displayMode} />
-                <Card displayMode={displayMode} />
-                <Card displayMode={displayMode} />
-                <Card displayMode={displayMode} />
+                {trendingCards}
         </div>
     )
 }
